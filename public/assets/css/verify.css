@@ -1,0 +1,499 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Custom CSS */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Modern Gradient Background */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+/* Header Styling (Updated) */
+.custom-header {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+}
+
+.header-logo {
+    max-height: 75px; /* Logo ka size adjust karne ke liye */
+    object-fit: contain;
+}
+
+.header-divider {
+    border-left: 3px solid #e31837; /* Red line */
+    height: 55px; /* Line ki height */
+    margin: 0 25px; /* Line ke aage peeche space */
+}
+
+.header-title {
+    color: #333333; /* Dark grey color text */
+    font-weight: 700;
+    font-size: 1.5rem; /* Text ka size */
+    letter-spacing: 0.5px;
+}
+
+/* Mobile ke liye responsive adjustments */
+
+
+.logo-left {
+    max-height: 119px;
+    object-fit: contain;
+}
+
+.logo-right {
+    max-height: 45px;
+    object-fit: contain;
+}
+
+/* Main Card Styling */
+.main-card {
+    border: none;
+    border-radius: 20px;
+}
+
+/* Typography */
+.page-title {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.description-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Form Inputs */
+.form-label {
+    font-weight: 600;
+    color: #34495e;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.custom-input {
+    border-radius: 10px;
+    padding: 12px 18px;
+    border: 1.5px solid #e0e6ed;
+    background-color: #f8fafc;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #e31837;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(227, 24, 55, 0.1);
+    outline: none;
+}
+
+/* Verify Button */
+.btn-verify {
+    background-color: #e31837;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 35px;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-verify:hover {
+    background-color: #c4122b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(227, 24, 55, 0.3);
+    color: white;
+}
+
+/* Right Side Info Box */
+.info-box {
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #e0e6ed;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.info-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* --- Certificate Realistic Mockup CSS --- */
+.certificate-mockup {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    background-image: radial-gradient(#f1f3f5 1.5px, transparent 1.5px);
+    background-size: 15px 15px;
+}
+
+.cert-top-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.cert-highlight-box {
+    border: 1.5px solid #0d6efd;
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.08);
+    border-radius: 3px;
+    font-weight: 700;
+    display: inline-block;
+    font-family: monospace;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+
+.signature-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+.signature-block {
+    text-align: center;
+    width: 45%;
+}
+
+.signature-line {
+    border-top: 1px solid #333;
+    margin-bottom: 5px;
+}
+
+.signature-font {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: -5px;
+    position: relative;
+    top: 8px;
+}
+
+.signature-name {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.signature-title {
+    font-size: 0.55rem;
+    color: #666;
+}
+
+
+@media (max-width: 768px) {
+    .header-logo {
+        max-height: 50px;
+    }
+    .header-divider {
+        margin: 0 15px;
+        height: 40px;
+    }
+    .header-title {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* --- Success Page Styles --- */
+.success-banner {
+    background-color: #198754; /* Green */
+    color: white;
+    padding: 15px 0;
+}
+
+.hero-card {
+    background-color: #0f172a; /* Dark Navy Blue */
+    color: white;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.hero-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d6efd;
+}
+
+.info-card {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: #f1f5f9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d6efd;
+    font-size: 1.2rem;
+}
+
+.skill-tag {
+    background-color: #f1f5f9;
+    color: #334155;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.share-btn {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #334155;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.share-btn:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+    color: #0f172a;
+}
+
+.verify-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.verify-list-item strong {
+    color: #0f172a;
+    display: block;
+}
+
+/* ============================================================
+   RESULT PAGE (credential-verified.blade.php) - RED THEME
+   ============================================================ */
+
+/* ---------- Top Green Success Banner ---------- */
+.success-banner {
+    background: linear-gradient(90deg, #e31837 0%, #c4122b 100%);
+    color: #fff;
+    padding: 18px 0;
+    box-shadow: 0 4px 15px rgba(227, 24, 55, 0.25);
+}
+.success-banner h4 {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- Verified Badge ---------- */
+.verify-badge {
+    background-color: rgba(227, 24, 55, 0.1);
+    color: #e31837;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+
+/* ---------- Page Main Title ---------- */
+.page-main-title {
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+/* ---------- About Text ---------- */
+.about-text {
+    line-height: 1.75;
+    font-size: 0.95rem;
+}
+
+/* ---------- Hero Dark Card ---------- */
+.hero-card {
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f172a 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 30px 35px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+}
+
+.hero-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(227, 24, 55, 0.15);
+    border: 1px solid rgba(227, 24, 55, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff4d6d;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+/* ---------- Green Status Dot ---------- */
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+}
+
+/* ---------- Info Card (White Cards) ---------- */
+.info-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    padding: 25px;
+    height: auto;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+    transition: box-shadow 0.3s ease;
+}
+.info-card:hover {
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+/* ---------- Icon Box (Red Accent) ---------- */
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(227, 24, 55, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e31837;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+}
+
+/* ---------- Skill Tags ---------- */
+.skill-tag {
+    background-color: #f1f5f9;
+    color: #334155;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+.skill-tag:hover {
+    background-color: rgba(227, 24, 55, 0.08);
+    border-color: rgba(227, 24, 55, 0.3);
+    color: #e31837;
+}
+
+/* ---------- Verification List Items ---------- */
+.verify-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+    color: #475569;
+}
+.verify-list-item i {
+    margin-top: 2px;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+.verify-list-item strong {
+    color: #0f172a;
+    display: block;
+    font-weight: 600;
+}
+
+/* ---------- Red Verify Button ---------- */
+.verify-btn-red {
+    background: linear-gradient(90deg, #e31837 0%, #c4122b 100%) !important;
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(227, 24, 55, 0.3);
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.verify-btn-red:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(227, 24, 55, 0.45);
+    color: #fff;
+}
+
+/* ---------- Bottom Banner ---------- */
+.bottom-banner {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+@media (min-width: 768px) {
+    .bottom-banner {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.icon-box-red {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #e31837 0%, #c4122b 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(227, 24, 55, 0.3);
+}
